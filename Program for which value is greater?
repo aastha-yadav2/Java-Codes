@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter two Number");
+		int x = sc.nextInt();
+		int y = sc.nextInt();
+		if(x>y) {
+			System.out.println("A is Greater Than B");
+		}
+		else if(x==y) {
+            System.out.println("Both are Equal");
+		}
+		else{
+		    System.out.println("B is Greater");
+		}
+    sc.close();
+	}
+}
