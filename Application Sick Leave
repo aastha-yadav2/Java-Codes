@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in);
+	System.out.println("======Sick Leave Application=====");
+	System.out.println("Enter Your Name");
+	String name = sc.nextLine();
+	System.out.println("Enter Class:");
+	String classname = sc.nextLine();
+	System.out.println("Enter from date (dd/mm/yy):");
+	String fromdate = sc.nextLine();
+	System.out.println("Enter To date (dd/mm/yy):");
+	String todate = sc.nextLine();
+	System.out.println("=======Leave Application======");
+	System.out.println("Name:"+name);
+	System.out.println("Class Name:"+classname);
+	System.out.println("From Date:"+fromdate);
+	System.out.println("To Date:"+todate);
+	 System.out.println("I am " + name + " of class " + classname +
+                ". I am suffering from illness, so I request you to kindly grant me sick leave from "
+                + fromdate + " to " + todate + ".");
+
+	System.out.println("Thank You");
+    sc.close();
+	}
+}
