@@ -1,0 +1,14 @@
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a Name :");
+        String name = sc.nextLine();
+        System.out.println("Enter the alphabet");
+        char ch = sc.next().charAt(0);
+        String result = name.replace(Character.toString(ch)," ");
+        System.out.println("After removing alphabet");
+        System.out.println(result);
+        sc.close();
+    }
+}
