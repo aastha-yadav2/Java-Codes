@@ -1,0 +1,17 @@
+import java.util.Scanner;
+class Main {
+    void prachi(){
+        System.out.println("Hello from Prachi !");
+    }
+    void Suhani(){
+        System.out.println("Hello from Suhani!");
+    }
+    void Dhruv(){
+        prachi();// called 1
+        Suhani(); //called2
+    }
+    public static void main(String[] args) {
+       Main obj = new Main();
+       obj.Dhruv();
+    }
+}
