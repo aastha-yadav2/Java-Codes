@@ -1,0 +1,60 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a number");
+
+        int num = sc.nextInt();
+
+        String even = "-", odd = "-";
+        String prime = "-", composite = "-";
+        String positive = "-", negative = "-";
+
+        // Even / Odd
+        if(num % 2 == 0){
+            even = String.valueOf(num);
+        }
+        else{
+            odd = String.valueOf(num);
+        }
+
+        // Positive / Negative
+        if(num > 0){
+            positive = String.valueOf(num);
+        }
+        else if(num < 0){
+            negative = String.valueOf(num);
+        }
+
+        // Prime / Composite
+        if(num > 1){
+
+            int count = 0;
+
+            for(int i = 1; i <= num; i++){
+                if(num % i == 0){
+                    count++;
+                }
+            }
+
+            if(count == 2){
+                prime = String.valueOf(num);
+            }
+            else{
+                composite = String.valueOf(num);
+            }
+        }
+
+           // formatted table
+        System.out.printf("%-8s %-6s %-6s %-7s %-10s %-9s %-9s\n",
+                "Number","Even","Odd","Prime","Composite","Positive","Negative");
+
+        System.out.printf("%-8d %-6s %-6s %-7s %-10s %-9s %-9s\n",
+                num, even, odd, prime, composite, positive, negative);
+
+
+        sc.close();
+    }
+}
